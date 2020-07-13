@@ -19,6 +19,8 @@
 		E5AE612024BCB3840058310E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5AE611E24BCB3840058310E /* Main.storyboard */; };
 		E5AE612224BCB3860058310E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5AE612124BCB3860058310E /* Assets.xcassets */; };
 		E5AE612524BCB3860058310E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5AE612324BCB3860058310E /* LaunchScreen.storyboard */; };
+		E5AE612D24BCB71B0058310E /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5AE612C24BCB71B0058310E /* SignUp.storyboard */; };
+		E5AE612F24BCB7980058310E /* QuestionPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5AE612E24BCB7980058310E /* QuestionPage.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		E5AE612124BCB3860058310E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5AE612424BCB3860058310E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5AE612624BCB3860058310E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5AE612C24BCB71B0058310E /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		E5AE612E24BCB7980058310E /* QuestionPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuestionPage.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				E5AE611A24BCB3830058310E /* SceneDelegate.swift */,
 				E5AE611C24BCB3840058310E /* ViewController.swift */,
 				E5AE611E24BCB3840058310E /* Main.storyboard */,
+				E5AE612C24BCB71B0058310E /* SignUp.storyboard */,
+				E5AE612E24BCB7980058310E /* QuestionPage.storyboard */,
 				E5AE612124BCB3860058310E /* Assets.xcassets */,
 				E5AE612324BCB3860058310E /* LaunchScreen.storyboard */,
 				E5AE612624BCB3860058310E /* Info.plist */,
@@ -143,11 +149,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AE612F24BCB7980058310E /* QuestionPage.storyboard in Resources */,
 				E5AE612524BCB3860058310E /* LaunchScreen.storyboard in Resources */,
 				520F18E924BCB94500FA2834 /* SelectCategoryPage.storyboard in Resources */,
 				520F18E724BCB70000FA2834 /* LoginPage.storyboard in Resources */,
 				520F18EB24BCBFD100FA2834 /* Results.storyboard in Resources */,
 				E5AE612224BCB3860058310E /* Assets.xcassets in Resources */,
+				E5AE612D24BCB71B0058310E /* SignUp.storyboard in Resources */,
 				E5AE612024BCB3840058310E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
