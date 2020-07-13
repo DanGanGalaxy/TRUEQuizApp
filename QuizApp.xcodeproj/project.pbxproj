@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		520F18E724BCB70000FA2834 /* LoginPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520F18E624BCB70000FA2834 /* LoginPage.storyboard */; };
+		520F18E924BCB94500FA2834 /* SelectCategoryPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520F18E824BCB94500FA2834 /* SelectCategoryPage.storyboard */; };
+		520F18EB24BCBFD100FA2834 /* Results.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520F18EA24BCBFD100FA2834 /* Results.storyboard */; };
+		520F18ED24BCC1BD00FA2834 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520F18EC24BCC1BD00FA2834 /* LoginPageViewController.swift */; };
+		520F18EF24BCC1DE00FA2834 /* SelectCategoryPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520F18EE24BCC1DE00FA2834 /* SelectCategoryPageViewController.swift */; };
+		520F18F124BCC1F600FA2834 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520F18F024BCC1F600FA2834 /* ResultsViewController.swift */; };
 		E5AE611924BCB3830058310E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE611824BCB3830058310E /* AppDelegate.swift */; };
 		E5AE611B24BCB3830058310E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE611A24BCB3830058310E /* SceneDelegate.swift */; };
 		E5AE611D24BCB3840058310E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE611C24BCB3840058310E /* ViewController.swift */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		520F18E624BCB70000FA2834 /* LoginPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginPage.storyboard; sourceTree = "<group>"; };
+		520F18E824BCB94500FA2834 /* SelectCategoryPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectCategoryPage.storyboard; sourceTree = "<group>"; };
+		520F18EA24BCBFD100FA2834 /* Results.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Results.storyboard; sourceTree = "<group>"; };
+		520F18EC24BCC1BD00FA2834 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		520F18EE24BCC1DE00FA2834 /* SelectCategoryPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryPageViewController.swift; sourceTree = "<group>"; };
+		520F18F024BCC1F600FA2834 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		E5AE611524BCB3830058310E /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AE611824BCB3830058310E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5AE611A24BCB3830058310E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +75,12 @@
 				E5AE612124BCB3860058310E /* Assets.xcassets */,
 				E5AE612324BCB3860058310E /* LaunchScreen.storyboard */,
 				E5AE612624BCB3860058310E /* Info.plist */,
+				520F18E624BCB70000FA2834 /* LoginPage.storyboard */,
+				520F18E824BCB94500FA2834 /* SelectCategoryPage.storyboard */,
+				520F18EA24BCBFD100FA2834 /* Results.storyboard */,
+				520F18EC24BCC1BD00FA2834 /* LoginPageViewController.swift */,
+				520F18EE24BCC1DE00FA2834 /* SelectCategoryPageViewController.swift */,
+				520F18F024BCC1F600FA2834 /* ResultsViewController.swift */,
 			);
 			path = QuizApp;
 			sourceTree = "<group>";
@@ -126,6 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5AE612524BCB3860058310E /* LaunchScreen.storyboard in Resources */,
+				520F18E924BCB94500FA2834 /* SelectCategoryPage.storyboard in Resources */,
+				520F18E724BCB70000FA2834 /* LoginPage.storyboard in Resources */,
+				520F18EB24BCBFD100FA2834 /* Results.storyboard in Resources */,
 				E5AE612224BCB3860058310E /* Assets.xcassets in Resources */,
 				E5AE612024BCB3840058310E /* Main.storyboard in Resources */,
 			);
@@ -139,8 +160,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5AE611D24BCB3840058310E /* ViewController.swift in Sources */,
+				520F18EF24BCC1DE00FA2834 /* SelectCategoryPageViewController.swift in Sources */,
+				520F18ED24BCC1BD00FA2834 /* LoginPageViewController.swift in Sources */,
 				E5AE611924BCB3830058310E /* AppDelegate.swift in Sources */,
 				E5AE611B24BCB3830058310E /* SceneDelegate.swift in Sources */,
+				520F18F124BCC1F600FA2834 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
