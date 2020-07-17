@@ -16,6 +16,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func signInButton(_ sender: Any) {
+    }
+    
+    @IBAction func signUpButton(_ sender: Any) {
+    }
+    
 }
 

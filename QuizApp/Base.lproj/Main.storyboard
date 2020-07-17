@@ -40,6 +40,10 @@
                                 <rect key="frame" x="180" y="659" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="SIGN IN"/>
+                                <connections>
+                                    <action selector="signInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k4o-Dp-kUt"/>
+                                    <segue destination="SiR-h6-zQ6" kind="modal" modalPresentationStyle="fullScreen" id="Ls1-3K-sHc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5J3-hY-Fcy">
                                 <rect key="frame" x="146" y="807" width="123" height="30"/>
@@ -50,6 +54,10 @@
                                 <rect key="frame" x="177" y="711" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="SIGN UP"/>
+                                <connections>
+                                    <action selector="signUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JOZ-rT-FnV"/>
+                                    <segue destination="43S-6W-LKt" kind="modal" id="Tyv-Ss-kQI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.035508677363395691" green="0.087189100682735443" blue="0.029992362484335899" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -59,6 +67,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+        </scene>
+        <!--LoginPage-->
+        <scene sceneID="Xhe-xk-qm5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LoginPage" id="SiR-h6-zQ6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hgR-kJ-c2t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="783" y="37"/>
+        </scene>
+        <!--SignUp-->
+        <scene sceneID="tz6-zY-WQ2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUp" id="43S-6W-LKt" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fVd-V0-wfc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="796" y="157"/>
         </scene>
     </scenes>
 </document>
