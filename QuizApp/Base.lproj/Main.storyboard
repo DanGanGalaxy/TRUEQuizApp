@@ -19,8 +19,8 @@
                                 <rect key="frame" x="-106" y="136" width="408" height="392"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quiz App, Baby" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGj-Yx-DCL">
-                                        <rect key="frame" x="121" y="88" width="254" height="217"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quiz App, Baby 😤😤" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGj-Yx-DCL">
+                                        <rect key="frame" x="109" y="130" width="275" height="132"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="51"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -64,7 +64,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="signUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JOZ-rT-FnV"/>
-                                    <segue destination="43S-6W-LKt" kind="modal" id="Tyv-Ss-kQI"/>
+                                    <segue destination="43S-6W-LKt" kind="modal" modalPresentationStyle="fullScreen" id="Tyv-Ss-kQI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -90,7 +90,9 @@
         <!--SignUp-->
         <scene sceneID="tz6-zY-WQ2">
             <objects>
-                <viewControllerPlaceholder storyboardName="SignUp" id="43S-6W-LKt" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="SignUp" id="43S-6W-LKt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="uTF-e7-lfQ"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fVd-V0-wfc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="796" y="157"/>
