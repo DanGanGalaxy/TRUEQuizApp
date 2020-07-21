@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginPageViewController: UIViewController {
 
+    var email = ""
+    var password = ""
+    
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     override func viewDidLoad() {
@@ -22,6 +26,18 @@ class LoginPageViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func loginButtonPressed(_ sender: Any) {
+        Auth.auth().signIn(withEmail: userNameTextField.text!, password: passwordTextField.text!) { (user, error) in
+           if error == nil{
+             self.performSegue(withIdentifier: "loginToHome", sender: self)
+                          }
+            else{
+             let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                            
+              alertController.addAction(defaultAction)
+              self.present(alertController, animated: true, completion: nil)
+                 }
+        }
     }
     
 }

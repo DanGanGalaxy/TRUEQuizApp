@@ -51,10 +51,9 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="loginButtonPressed:" destination="6pr-3l-MqA" eventType="touchUpInside" id="LSW-IV-ZOf"/>
-                                    <segue destination="9fx-7D-0Uk" kind="modal" modalPresentationStyle="fullScreen" id="Jjx-DJ-0Jx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjl-YJ-y5E">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xjl-YJ-y5E">
                                 <rect key="frame" x="20" y="228" width="374" height="37"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -104,6 +103,7 @@
                     <connections>
                         <outlet property="passwordTextField" destination="Edh-6F-b8k" id="yGf-jO-RNe"/>
                         <outlet property="userNameTextField" destination="F0h-OG-32Q" id="xyr-lJ-ZeV"/>
+                        <segue destination="9fx-7D-0Uk" kind="modal" identifier="loginToHome" modalPresentationStyle="fullScreen" id="zEg-Ru-Dw4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3lg-8e-SRn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -94,6 +94,7 @@
                                 <connections>
                                     <action selector="doneTypingPassword:" destination="Y8T-Ry-nvs" eventType="editingDidEnd" id="yRK-Z2-o5l"/>
                                     <action selector="passwordBox:" destination="Qja-9z-z7h" eventType="editingDidEnd" id="NBd-jv-SOq"/>
+                                    <action selector="typedPassword:" destination="Y8T-Ry-nvs" eventType="editingChanged" id="Jfv-zf-JMP"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zG1-G5-qAB">
@@ -110,7 +111,6 @@
                                 <connections>
                                     <action selector="signUpButtonPressed:" destination="Y8T-Ry-nvs" eventType="touchUpInside" id="axO-SF-j3v"/>
                                     <action selector="signUpButtonPressed:" destination="Qja-9z-z7h" eventType="touchUpInside" id="lt7-r3-vua"/>
-                                    <segue destination="PU6-Cj-6e4" kind="modal" modalPresentationStyle="fullScreen" id="YlL-hQ-1Bl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -146,6 +146,7 @@
                         <outlet property="emailBox" destination="iYX-gT-Ofg" id="4QH-5L-ok1"/>
                         <outlet property="nameBox" destination="MSF-CI-dvf" id="h3C-sr-lcU"/>
                         <outlet property="passwordBox" destination="oW9-Ap-QHq" id="opV-Ns-fOe"/>
+                        <segue destination="PU6-Cj-6e4" kind="modal" identifier="SelectCategoryPageViewController" modalPresentationStyle="fullScreen" id="e0F-Nv-s5x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9TN-gP-yQa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

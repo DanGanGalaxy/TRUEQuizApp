@@ -19,14 +19,18 @@ class SignUpViewController: UIViewController, UITextFieldDelegate{
     var email = ""
     var password = ""
     
+    @IBAction func typedPassword(_ sender: Any) {
+        password = passwordBox.text!
+        print(password)
+    }
     @IBAction func doneTypingName(_ sender: Any) {
         name = nameBox.text!
+        print(name)
     }
     @IBAction func doneTypingEmail(_ sender: Any) {
         email = emailBox.text!
     }
     @IBAction func doneTypingPassword(_ sender: Any) {
-        password = passwordBox.text!
     }
     
     var handle = Auth.auth().addStateDidChangeListener { (auth, user) in
@@ -41,7 +45,10 @@ class SignUpViewController: UIViewController, UITextFieldDelegate{
     
     
     @IBAction func signUpButtonPressed(_ sender: Any) {
+        print(email)
+        print(password)
         if password != "" && email != "" {
+            print("made it!!")
             Auth.auth().createUser(withEmail: email, password: password){ (user, error) in
          if error == nil {
            self.performSegue(withIdentifier: "SelectCategoryPageViewController", sender: self)
