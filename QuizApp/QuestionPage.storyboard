@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Question Page View Controller-->
         <scene sceneID="T4O-9K-o1N">
             <objects>
-                <viewController id="bsz-vd-Elx" sceneMemberID="viewController">
+                <viewController id="bsz-vd-Elx" customClass="QuestionPageViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4QZ-ku-NtS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,6 +50,9 @@
                                                         <state key="normal" title="Yellowstone National Park   ">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="answer1Button:" destination="bsz-vd-Elx" eventType="touchUpInside" id="glR-pv-VlY"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -82,11 +85,14 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nld-Wj-dhW">
-                                                        <rect key="frame" x="66" y="0.0" width="177" height="66"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nld-Wj-dhW">
+                                                        <rect key="frame" x="66" y="0.0" width="197" height="66"/>
                                                         <state key="normal" title="Yellowstone National Park">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="answer2Button:" destination="bsz-vd-Elx" eventType="touchUpInside" id="TLj-jm-Sp5"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -116,11 +122,14 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OM-aw-fFK">
-                                                        <rect key="frame" x="66" y="0.0" width="177" height="66"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OM-aw-fFK">
+                                                        <rect key="frame" x="66" y="0.0" width="197" height="66"/>
                                                         <state key="normal" title="Yellowstone National Park">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="answer3Button:" destination="bsz-vd-Elx" eventType="touchUpInside" id="hza-P2-AjO"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -150,11 +159,14 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5L-Fk-rhL">
-                                                        <rect key="frame" x="66" y="0.0" width="177" height="66"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5L-Fk-rhL">
+                                                        <rect key="frame" x="66" y="0.0" width="197" height="66"/>
                                                         <state key="normal" title="Yellowstone National Park">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="answer4Button:" destination="bsz-vd-Elx" eventType="touchUpInside" id="29R-Of-30Q"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -227,11 +239,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <state key="normal" title="SUBMIT">
+                                <state key="normal" title="NEXT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="NcB-w1-Cpt" kind="modal" modalPresentationStyle="fullScreen" id="VM6-72-bGy"/>
+                                    <action selector="submitButton:" destination="bsz-vd-Elx" eventType="touchUpInside" id="GiN-nO-Dmr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -242,6 +254,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XoC-cI-qTR"/>
                     </view>
+                    <connections>
+                        <outlet property="answer1Text" destination="CuF-Rl-fnF" id="Tsb-hI-2fo"/>
+                        <outlet property="answer2Text" destination="nld-Wj-dhW" id="QBe-77-aR7"/>
+                        <outlet property="answer3Text" destination="2OM-aw-fFK" id="PO1-6M-ff5"/>
+                        <outlet property="answer4Text" destination="k5L-Fk-rhL" id="KdN-BJ-Tf9"/>
+                        <outlet property="nextSubmitButton" destination="MGW-v5-oJh" id="TBg-l6-CdT"/>
+                        <outlet property="questionText" destination="HfK-yb-Ylf" id="8HD-by-lVx"/>
+                        <segue destination="NcB-w1-Cpt" kind="modal" identifier="goToResults" modalPresentationStyle="fullScreen" id="5UZ-9Q-xpC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYU-xo-lqY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

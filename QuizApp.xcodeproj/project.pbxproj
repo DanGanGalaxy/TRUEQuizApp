@@ -16,6 +16,7 @@
 		5213F90824C20E1A0031E57B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5213F90724C20E1A0031E57B /* Question.swift */; };
 		5213F90A24C211930031E57B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5213F90924C211920031E57B /* GoogleService-Info.plist */; };
 		9C44EE8D5D5D7BB1AAC3DC47 /* Pods_QuizApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D697B9CB79EFB9FD23FE4850 /* Pods_QuizApp.framework */; };
+		E5694E7324C760DC00F1BE3F /* QuestionPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5694E7224C760DC00F1BE3F /* QuestionPageViewController.swift */; };
 		E598971C24C5F9F1004806EF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598971B24C5F9F1004806EF /* SignUpViewController.swift */; };
 		E5AE611924BCB3830058310E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE611824BCB3830058310E /* AppDelegate.swift */; };
 		E5AE611B24BCB3830058310E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE611A24BCB3830058310E /* SceneDelegate.swift */; };
@@ -39,6 +40,7 @@
 		55282FB8E82D650BF801BE67 /* Pods-QuizApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizApp.release.xcconfig"; path = "Target Support Files/Pods-QuizApp/Pods-QuizApp.release.xcconfig"; sourceTree = "<group>"; };
 		92D32691B17FEDF90E4D8C7D /* Pods-QuizApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizApp.debug.xcconfig"; path = "Target Support Files/Pods-QuizApp/Pods-QuizApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D697B9CB79EFB9FD23FE4850 /* Pods_QuizApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5694E7224C760DC00F1BE3F /* QuestionPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPageViewController.swift; sourceTree = "<group>"; };
 		E598971B24C5F9F1004806EF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E5AE611524BCB3830058310E /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AE611824BCB3830058310E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,19 +109,20 @@
 				E5AE611A24BCB3830058310E /* SceneDelegate.swift */,
 				E5AE611C24BCB3840058310E /* ViewController.swift */,
 				E5AE611E24BCB3840058310E /* Main.storyboard */,
+				520F18E624BCB70000FA2834 /* LoginPage.storyboard */,
 				E5AE612C24BCB71B0058310E /* SignUp.storyboard */,
+				520F18E824BCB94500FA2834 /* SelectCategoryPage.storyboard */,
 				E5AE612E24BCB7980058310E /* QuestionPage.storyboard */,
+				520F18EA24BCBFD100FA2834 /* Results.storyboard */,
 				E5AE612124BCB3860058310E /* Assets.xcassets */,
 				E5AE612324BCB3860058310E /* LaunchScreen.storyboard */,
 				E5AE612624BCB3860058310E /* Info.plist */,
-				520F18E624BCB70000FA2834 /* LoginPage.storyboard */,
-				520F18E824BCB94500FA2834 /* SelectCategoryPage.storyboard */,
-				520F18EA24BCBFD100FA2834 /* Results.storyboard */,
 				520F18EC24BCC1BD00FA2834 /* LoginPageViewController.swift */,
 				E598971B24C5F9F1004806EF /* SignUpViewController.swift */,
 				520F18EE24BCC1DE00FA2834 /* SelectCategoryPageViewController.swift */,
 				520F18F024BCC1F600FA2834 /* ResultsViewController.swift */,
 				5213F90724C20E1A0031E57B /* Question.swift */,
+				E5694E7224C760DC00F1BE3F /* QuestionPageViewController.swift */,
 			);
 			path = QuizApp;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				E5AE611D24BCB3840058310E /* ViewController.swift in Sources */,
 				520F18EF24BCC1DE00FA2834 /* SelectCategoryPageViewController.swift in Sources */,
 				E598971C24C5F9F1004806EF /* SignUpViewController.swift in Sources */,
+				E5694E7324C760DC00F1BE3F /* QuestionPageViewController.swift in Sources */,
 				520F18ED24BCC1BD00FA2834 /* LoginPageViewController.swift in Sources */,
 				E5AE611924BCB3830058310E /* AppDelegate.swift in Sources */,
 				E5AE611B24BCB3830058310E /* SceneDelegate.swift in Sources */,
