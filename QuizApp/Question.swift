@@ -8,11 +8,7 @@
 
 import Foundation
 
-var category1Questions = [Question.self]
-var category2Questions = [Question.self]
-var category3Questions = [Question.self]
-var category4Questions = [Question.self]
-var category5Questions = [Question.self]
+
 
 class Question {
     

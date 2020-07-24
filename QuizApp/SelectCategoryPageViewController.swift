@@ -9,6 +9,8 @@
 import UIKit
 
 class SelectCategoryPageViewController: UIViewController {
+    
+    var selectedCategory = ""
 
     @IBOutlet weak var sportsButton: UIButton!
     @IBOutlet weak var chemButton: UIButton!
@@ -33,16 +35,42 @@ class SelectCategoryPageViewController: UIViewController {
     }
     */
     @IBAction func sportsButtonPressed(_ sender: Any) {
+        selectedCategory = "sports"
     }
     @IBAction func airpodsButtonPressed(_ sender: Any) {
+        selectedCategory = "music"
     }
     @IBAction func chemButtonPressed(_ sender: Any) {
+        selectedCategory = "science"
     }
     
     @IBAction func globeButtonPressed(_ sender: Any) {
+        selectedCategory = "geography"
     }
     @IBAction func foodButtonPressed(_ sender: Any) {
+        selectedCategory = "food"
     }
     @IBAction func startQuizButtonPressed(_ sender: Any) {
+        if (selectedCategory != "") {
+            performSegue(withIdentifier: "coolSegue", sender: nil)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let newViewController = segue.destination as! QuestionPageViewController
+        //"food", "geography", "music", "science", "sports"
+        if (selectedCategory == "food") {
+            newViewController.questions = category1Questions
+        } else if (selectedCategory == "geography") {
+            newViewController.questions = category2Questions
+        } else if (selectedCategory == "music") {
+            newViewController.questions = category3Questions
+        } else if (selectedCategory == "science") {
+            newViewController.questions = category4Questions
+        } else if (selectedCategory == "sports") {
+            newViewController.questions = category5Questions
+        }
+        newViewController.category = selectedCategory
     }
 }

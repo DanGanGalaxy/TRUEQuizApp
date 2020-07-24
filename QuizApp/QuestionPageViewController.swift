@@ -15,6 +15,7 @@ class QuestionPageViewController: UIViewController {
     var currentQuestion = 0
     var correctNumQuestions = 0
     var userPicked = 1
+    var category = ""
     
     @IBOutlet weak var answer1Text: UIButton!
     @IBOutlet weak var answer2Text: UIButton!
@@ -48,13 +49,21 @@ class QuestionPageViewController: UIViewController {
     }
     
     @IBAction func submitButton(_ sender: Any) {
-        currentQuestion += 1
         checkAnswer()
+        print("currentQustion = \(currentQuestion)")
+        currentQuestion += 1
         if currentQuestion == questions.count {
             performSegue(withIdentifier: "goToResults", sender: nil)
         } else if currentQuestion == questions.count - 1 {
             nextSubmitButton.setTitle("SUBMIT", for: .normal)
-        } else if currentQuestion < questions.count {
+            print("currentQustion = \(currentQuestion)")
+            questionText.text = questions[currentQuestion].questionText
+            answer1Text.setTitle(questions[currentQuestion].answer1, for: .normal)
+            answer2Text.setTitle(questions[currentQuestion].answer2, for: .normal)
+            answer3Text.setTitle(questions[currentQuestion].answer3, for: .normal)
+            answer4Text.setTitle(questions[currentQuestion].answer4, for: .normal)
+        } else {
+            print("currentQustion = \(currentQuestion)")
             questionText.text = questions[currentQuestion].questionText
             answer1Text.setTitle(questions[currentQuestion].answer1, for: .normal)
             answer2Text.setTitle(questions[currentQuestion].answer2, for: .normal)
@@ -67,7 +76,17 @@ class QuestionPageViewController: UIViewController {
         correctAnswer = questions[currentQuestion].correctChoice
         if correctAnswer == userPicked {
             correctNumQuestions += 1
+            print(correctNumQuestions)
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print(correctNumQuestions)
+        print(questions.count)
+        let newViewController = segue.destination as! ResultsViewController
+        newViewController.categoryString = category
+        newViewController.numberRightQuestions = correctNumQuestions
+        newViewController.numberOfQuestions = questions.count
     }
     
     /*

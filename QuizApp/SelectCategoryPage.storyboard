@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Vn-ED-Voc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Vn-ED-Voc">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -40,7 +40,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="startQuizButtonPressed:" destination="0Vn-ED-Voc" eventType="touchUpInside" id="FDK-m1-E7q"/>
-                                    <segue destination="bWP-GC-uR0" kind="modal" modalPresentationStyle="fullScreen" id="NNl-1g-siV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJi-7b-Okr">
@@ -146,6 +145,7 @@
                         <outlet property="foodButton" destination="enb-4R-1D9" id="BKn-0T-q1z"/>
                         <outlet property="globeButton" destination="fah-5N-Vfo" id="vhI-Jr-z8x"/>
                         <outlet property="sportsButton" destination="QJi-7b-Okr" id="nQm-jm-sHY"/>
+                        <segue destination="bWP-GC-uR0" kind="modal" identifier="coolSegue" modalPresentationStyle="fullScreen" id="EcU-DN-36V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jpi-x4-Sea" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
