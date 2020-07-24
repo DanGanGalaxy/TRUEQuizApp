@@ -36,19 +36,24 @@ class QuestionPageViewController: UIViewController {
     }
     
     @IBAction func answer1Button(_ sender: Any) {
+        setColorOfStuff(categorySelected: "1")
         userPicked = 1
     }
     @IBAction func answer2Button(_ sender: Any) {
+        setColorOfStuff(categorySelected: "2")
         userPicked = 2
     }
     @IBAction func answer3Button(_ sender: Any) {
+        setColorOfStuff(categorySelected: "3")
         userPicked = 3
     }
     @IBAction func answer4Button(_ sender: Any) {
+        setColorOfStuff(categorySelected: "4")
         userPicked = 4
     }
     
     @IBAction func submitButton(_ sender: Any) {
+        resetColors()
         checkAnswer()
         print("currentQustion = \(currentQuestion)")
         currentQuestion += 1
@@ -87,6 +92,32 @@ class QuestionPageViewController: UIViewController {
         newViewController.categoryString = category
         newViewController.numberRightQuestions = correctNumQuestions
         newViewController.numberOfQuestions = questions.count
+    }
+    
+    func setColorOfStuff (categorySelected: String) {
+        
+        answer1Text.backgroundColor = UIColor(white: 1, alpha: 0)
+        answer2Text.backgroundColor = UIColor(white: 1, alpha: 0)
+        answer3Text.backgroundColor = UIColor(white: 1, alpha: 0)
+        answer4Text.backgroundColor = UIColor(white: 1, alpha: 0)
+        
+        if (categorySelected == "1") {
+            answer1Text.backgroundColor = UIColor.systemTeal
+        } else if (categorySelected == "2") {
+            answer2Text.backgroundColor = UIColor.systemTeal
+        } else if (categorySelected == "3") {
+            answer3Text.backgroundColor = UIColor.systemTeal
+        } else if (categorySelected == "4") {
+            answer4Text.backgroundColor = UIColor.systemTeal
+        }
+        
+    }
+    
+    func resetColors() {
+        answer1Text.backgroundColor = UIColor(white: 1, alpha: 0)
+        answer2Text.backgroundColor = UIColor(white: 1, alpha: 0)
+        answer3Text.backgroundColor = UIColor(white: 1, alpha: 0)
+        answer4Text.backgroundColor = UIColor(white: 1, alpha: 0)
     }
     
     /*

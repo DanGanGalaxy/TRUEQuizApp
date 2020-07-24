@@ -34,21 +34,50 @@ class SelectCategoryPageViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    func setColorOfStuff (categorySelected: String) {
+        
+        sportsButton.backgroundColor = UIColor.white
+        chemButton.backgroundColor = UIColor.white
+        globeButton.backgroundColor = UIColor.white
+        foodButton.backgroundColor = UIColor.white
+        airpodsButton.backgroundColor = UIColor.white
+        
+        if (categorySelected == "sports") {
+            sportsButton.backgroundColor = UIColor.systemTeal
+        } else if (categorySelected == "music") {
+            airpodsButton.backgroundColor = UIColor.systemTeal
+        } else if (categorySelected == "science") {
+            chemButton.backgroundColor = UIColor.systemTeal
+        } else if (categorySelected == "geography") {
+            globeButton.backgroundColor = UIColor.systemTeal
+        } else if (categorySelected == "food") {
+            foodButton.backgroundColor = UIColor.systemTeal
+        }
+        
+    }
+    
     @IBAction func sportsButtonPressed(_ sender: Any) {
         selectedCategory = "sports"
+        setColorOfStuff(categorySelected: selectedCategory)
+        
     }
     @IBAction func airpodsButtonPressed(_ sender: Any) {
         selectedCategory = "music"
+        setColorOfStuff(categorySelected: selectedCategory)
+        
     }
     @IBAction func chemButtonPressed(_ sender: Any) {
         selectedCategory = "science"
+        setColorOfStuff(categorySelected: selectedCategory)
     }
     
     @IBAction func globeButtonPressed(_ sender: Any) {
         selectedCategory = "geography"
+        setColorOfStuff(categorySelected: selectedCategory)
     }
     @IBAction func foodButtonPressed(_ sender: Any) {
         selectedCategory = "food"
+        setColorOfStuff(categorySelected: selectedCategory)
     }
     @IBAction func startQuizButtonPressed(_ sender: Any) {
         if (selectedCategory != "") {
