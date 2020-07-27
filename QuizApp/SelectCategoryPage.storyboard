@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Vn-ED-Voc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Vn-ED-Voc">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,8 +23,8 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqe-zK-8C1">
-                                <rect key="frame" x="111.5" y="791" width="191" height="71"/>
-                                <color key="backgroundColor" red="1" green="0.53331586230000005" blue="0.1012829288" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="112" y="695" width="191" height="71"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="191" id="IJu-yy-jwN"/>
                                     <constraint firstAttribute="height" constant="71" id="OMg-iw-rOc"/>
@@ -105,12 +105,26 @@
                                 <color key="shadowColor" red="0.78288833530000002" green="0.090407106350000002" blue="0.16696456339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="shadowOffset" width="4" height="4"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLD-70-n9g">
+                                <rect key="frame" x="111.5" y="791" width="191" height="71"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="D9N-1r-kzl"/>
+                                    <constraint firstAttribute="width" constant="191" id="ShP-Tf-LRt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="LEADERBOARD">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6mH-0O-q5k" kind="modal" modalPresentationStyle="fullScreen" id="lgb-Jm-TxK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Taf-lV-9xr" firstAttribute="trailing" secondItem="PgG-9U-Xbe" secondAttribute="trailing" constant="51" id="0S8-h3-YKs"/>
                             <constraint firstItem="QJi-7b-Okr" firstAttribute="top" secondItem="3yx-L5-CnG" secondAttribute="bottom" constant="118.5" id="2Bj-eI-1co"/>
-                            <constraint firstItem="Fqe-zK-8C1" firstAttribute="top" secondItem="enb-4R-1D9" secondAttribute="bottom" constant="281" id="2Hi-gM-wR6"/>
                             <constraint firstItem="PgG-9U-Xbe" firstAttribute="leading" secondItem="enb-4R-1D9" secondAttribute="trailing" constant="168" id="3Du-If-oaB"/>
                             <constraint firstItem="Taf-lV-9xr" firstAttribute="trailing" secondItem="fah-5N-Vfo" secondAttribute="trailing" constant="173" id="5Ua-69-2K4"/>
                             <constraint firstItem="enb-4R-1D9" firstAttribute="leading" secondItem="Taf-lV-9xr" secondAttribute="leading" constant="45" id="5pb-dY-IHK"/>
@@ -118,21 +132,25 @@
                             <constraint firstItem="Taf-lV-9xr" firstAttribute="trailing" secondItem="QJi-7b-Okr" secondAttribute="trailing" constant="98" id="AD8-yn-NRY"/>
                             <constraint firstItem="PgG-9U-Xbe" firstAttribute="top" secondItem="QJi-7b-Okr" secondAttribute="bottom" constant="58" id="DUP-S0-XNB"/>
                             <constraint firstItem="fVC-15-AMX" firstAttribute="centerX" secondItem="Raa-Ta-LvM" secondAttribute="centerX" id="EC1-wt-WsO"/>
+                            <constraint firstItem="fLD-70-n9g" firstAttribute="top" secondItem="Fqe-zK-8C1" secondAttribute="bottom" constant="25" id="FpR-Ik-999"/>
                             <constraint firstItem="fah-5N-Vfo" firstAttribute="top" secondItem="3yx-L5-CnG" secondAttribute="bottom" constant="332.5" id="HV1-7s-UpC"/>
+                            <constraint firstItem="fLD-70-n9g" firstAttribute="bottom" secondItem="Taf-lV-9xr" secondAttribute="bottom" id="Jm7-lG-Q4z"/>
                             <constraint firstItem="fVC-15-AMX" firstAttribute="centerX" secondItem="Raa-Ta-LvM" secondAttribute="centerX" id="LWR-TM-XUa"/>
                             <constraint firstItem="enb-4R-1D9" firstAttribute="top" secondItem="vIp-u5-3NH" secondAttribute="bottom" constant="57" id="Lfw-U7-zwW"/>
                             <constraint firstItem="QJi-7b-Okr" firstAttribute="leading" secondItem="vIp-u5-3NH" secondAttribute="trailing" constant="76" id="N2W-yQ-jnY"/>
-                            <constraint firstItem="Fqe-zK-8C1" firstAttribute="top" secondItem="fah-5N-Vfo" secondAttribute="bottom" constant="199" id="ONV-hv-UjA"/>
-                            <constraint firstItem="Fqe-zK-8C1" firstAttribute="top" secondItem="PgG-9U-Xbe" secondAttribute="bottom" constant="291" id="PCF-yq-8RD"/>
                             <constraint firstItem="PgG-9U-Xbe" firstAttribute="leading" secondItem="enb-4R-1D9" secondAttribute="trailing" constant="168" id="Ri9-Xc-lAx"/>
                             <constraint firstItem="vIp-u5-3NH" firstAttribute="leading" secondItem="Taf-lV-9xr" secondAttribute="leading" constant="90" id="SpL-c2-b8H"/>
+                            <constraint firstItem="Fqe-zK-8C1" firstAttribute="leading" secondItem="Taf-lV-9xr" secondAttribute="leading" constant="112" id="TC6-AP-g1r"/>
                             <constraint firstItem="3yx-L5-CnG" firstAttribute="leading" secondItem="Taf-lV-9xr" secondAttribute="leading" constant="7" id="aqL-vu-39n"/>
                             <constraint firstItem="fah-5N-Vfo" firstAttribute="leading" secondItem="Taf-lV-9xr" secondAttribute="leading" constant="166" id="bS0-35-s5L"/>
-                            <constraint firstItem="Taf-lV-9xr" firstAttribute="bottom" secondItem="Fqe-zK-8C1" secondAttribute="bottom" id="bUd-vY-Qi2"/>
                             <constraint firstItem="PgG-9U-Xbe" firstAttribute="top" secondItem="QJi-7b-Okr" secondAttribute="bottom" constant="58" id="eMW-bf-NHB"/>
                             <constraint firstItem="Fqe-zK-8C1" firstAttribute="centerX" secondItem="Raa-Ta-LvM" secondAttribute="centerX" id="erW-kr-3t0"/>
                             <constraint firstItem="QJi-7b-Okr" firstAttribute="leading" secondItem="vIp-u5-3NH" secondAttribute="trailing" constant="76" id="jYm-zh-h6G"/>
                             <constraint firstItem="enb-4R-1D9" firstAttribute="top" secondItem="vIp-u5-3NH" secondAttribute="bottom" constant="57" id="nWZ-4t-mZx"/>
+                            <constraint firstItem="Taf-lV-9xr" firstAttribute="trailing" secondItem="Fqe-zK-8C1" secondAttribute="trailing" constant="111" id="nya-3W-G6a"/>
+                            <constraint firstItem="Fqe-zK-8C1" firstAttribute="top" secondItem="fVC-15-AMX" secondAttribute="bottom" constant="41" id="oaG-5D-Mx7"/>
+                            <constraint firstItem="fLD-70-n9g" firstAttribute="centerX" secondItem="Raa-Ta-LvM" secondAttribute="centerX" id="rdX-Ad-yH8"/>
+                            <constraint firstItem="fLD-70-n9g" firstAttribute="top" secondItem="Fqe-zK-8C1" secondAttribute="bottom" constant="25" id="snC-kh-f0N"/>
                             <constraint firstItem="vIp-u5-3NH" firstAttribute="top" secondItem="3yx-L5-CnG" secondAttribute="bottom" constant="118.5" id="tGc-QH-aYP"/>
                             <constraint firstItem="3yx-L5-CnG" firstAttribute="top" secondItem="Taf-lV-9xr" secondAttribute="top" constant="24" id="vEu-gz-L6f"/>
                             <constraint firstItem="Taf-lV-9xr" firstAttribute="trailing" secondItem="3yx-L5-CnG" secondAttribute="trailing" constant="7" id="wh0-3b-Jxh"/>
@@ -159,6 +177,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Agd-cD-o0N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="705" y="69"/>
+        </scene>
+        <!--Leaderboard-->
+        <scene sceneID="tG0-HW-K8D">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Leaderboard" id="6mH-0O-q5k" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hV6-9i-3jM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="731" y="222"/>
         </scene>
     </scenes>
     <resources>

@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Firebase
 
 class ResultsViewController: UIViewController {
-
+    
     @IBOutlet weak var passedOrNotLabel: UILabel!
     @IBOutlet weak var percentCorrectLabel: UILabel!
     @IBOutlet weak var categoryImage: UIImageView!
@@ -22,6 +23,27 @@ class ResultsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let db = Firestore.firestore()
+        let userEmail = Auth.auth().currentUser!.email
+        db.collection("leaderboard").document(userEmail!).setData([
+            "username": userEmail,
+            "numCorrect": "\(numberRightQuestions)"
+        ])
+        
+        db.collection("leaderboard").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    let documentData = document.data()
+                    let a = documentData["username"] as! String
+                    let b = documentData["numCorrect"] as! String
+                    let myLeaderboardEntry = LeaderboardEntry(email: a, numberCorrect: b)
+                    leaderboardEntries.append(myLeaderboardEntry)
+                }
+            }
+        }
         
         percentQuestions = (Double(numberRightQuestions) / Double(numberOfQuestions)) * 100
         
@@ -54,21 +76,21 @@ class ResultsViewController: UIViewController {
         } else if (categoryString == "food") {
             categoryImage.image = UIImage(named: "food.png")
         }
-
+        
         // Do any additional setup after loading the view.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
     @IBAction func homeButtonPressed(_ sender: Any) {
     }
 }

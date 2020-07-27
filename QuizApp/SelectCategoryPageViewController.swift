@@ -11,7 +11,7 @@ import UIKit
 class SelectCategoryPageViewController: UIViewController {
     
     var selectedCategory = ""
-
+    
     @IBOutlet weak var sportsButton: UIButton!
     @IBOutlet weak var chemButton: UIButton!
     @IBOutlet weak var globeButton: UIButton!
@@ -20,20 +20,20 @@ class SelectCategoryPageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
     func setColorOfStuff (categorySelected: String) {
         
         sportsButton.backgroundColor = UIColor.white
@@ -86,20 +86,21 @@ class SelectCategoryPageViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        let newViewController = segue.destination as! QuestionPageViewController
-        //"food", "geography", "music", "science", "sports"
-        if (selectedCategory == "food") {
-            newViewController.questions = category1Questions
-        } else if (selectedCategory == "geography") {
-            newViewController.questions = category2Questions
-        } else if (selectedCategory == "music") {
-            newViewController.questions = category3Questions
-        } else if (selectedCategory == "science") {
-            newViewController.questions = category4Questions
-        } else if (selectedCategory == "sports") {
-            newViewController.questions = category5Questions
+        if segue.identifier == "coolSegue" {
+            let newViewController = segue.destination as! QuestionPageViewController
+            //"food", "geography", "music", "science", "sports"
+            if (selectedCategory == "food") {
+                newViewController.questions = category1Questions
+            } else if (selectedCategory == "geography") {
+                newViewController.questions = category2Questions
+            } else if (selectedCategory == "music") {
+                newViewController.questions = category3Questions
+            } else if (selectedCategory == "science") {
+                newViewController.questions = category4Questions
+            } else if (selectedCategory == "sports") {
+                newViewController.questions = category5Questions
+            }
+            newViewController.category = selectedCategory
         }
-        newViewController.category = selectedCategory
     }
 }

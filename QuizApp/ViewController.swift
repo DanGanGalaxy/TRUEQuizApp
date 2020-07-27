@@ -15,6 +15,8 @@ var category3Questions = [Question]()
 var category4Questions = [Question]()
 var category5Questions = [Question]()
 
+var leaderboardEntries = [LeaderboardEntry]()
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var circleView: UIView!
@@ -58,6 +60,20 @@ class ViewController: UIViewController {
             
         }
         
+        db.collection("leaderboard").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    let documentData = document.data()
+                    let a = documentData["username"] as! String
+                    let b = documentData["numCorrect"] as! String
+                    let myLeaderboardEntry = LeaderboardEntry(email: a, numberCorrect: b)
+                    leaderboardEntries.append(myLeaderboardEntry)
+                }
+            }
+        }
+
         
         
         super.viewDidLoad()
